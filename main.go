@@ -18,6 +18,8 @@ func main() {
 	pgui := pg.NewProntoGUI()
 	err := pgui.StartServing("127.0.0.1", 50053)
 
+	listDemo2(pgui)
+
 	if err != nil {
 		fmt.Printf("Error trying to start server:  %s", err.Error())
 		return

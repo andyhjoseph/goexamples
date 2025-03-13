@@ -2,7 +2,9 @@ module github.com/prontogui/goexamples
 
 go 1.22.1
 
-require github.com/prontogui/golib v0.0.53
+//require github.com/prontogui/golib v0.0.53
+
+require github.com/prontogui/golib v0.0.0-00010101000000-000000000000
 
 require (
 	github.com/fxamacker/cbor/v2 v2.6.0 // indirect
@@ -15,3 +17,5 @@ require (
 	google.golang.org/grpc v1.62.1 // indirect
 	google.golang.org/protobuf v1.32.0 // indirect
 )
+
+replace github.com/prontogui/golib => ../golib
